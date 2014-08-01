@@ -24,9 +24,7 @@ var line = d3.svg.line().x(function (d, i) {
 });
 
 // SVG要素を追加
-var graph = d3.select("#graph");
-
-graph.append("svg:svg").attr("width", w + m[1] + m[3]).attr("height", h + m[0] + m[2]).append("svg:g").attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+var graph = d3.select("#graph").append("svg:svg").attr("width", w + m[1] + m[3]).attr("height", h + m[0] + m[2]).append("svg:g").attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
 // 軸定義
 var xAxis = d3.svg.axis().scale(xScale).tickSize(-h);
