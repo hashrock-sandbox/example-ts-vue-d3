@@ -42,10 +42,19 @@
             left:0;
             float:left;
         }
+
+        input{
+            width:100%;
+        }
     </style>
 </head>
 <body>
-    <div id="graph" class="aGraph"></div>
+    <div id="main">
+        <div style="position: relative; height: 400px">
+            <div id="graph" class="aGraph"></div>
+        </div>
+        <input type="text" v-model="csv"/>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
